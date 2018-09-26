@@ -1,0 +1,56 @@
+Q1: The following complaint comes in from a customer: 
+“We are noticing that our page is loading slowly. We have 50 high-resolution 
+images loading and we’d like to speed it up!".
+
+A1: (assuming that the images are not under Olapic's control)
+
+Dear Customer,
+    There are many factors that can contribute to a page's loading speed, such as image size, script files loading order, server response time, or script execution time. (see [2]).
+
+In order to reduce the loading time of each of the high-res images, you can reduce the 
+their resolution, use different size/resolution for different screen sizes (which requires additional logic) and you can also use a lossless compression to further reduce the size of each image (see [1]).
+
+For additional performance tuning tools you can see [3].
+
+Rationale/Sources 1:
+[1] https://yupitsvegan.com/resources/for-bloggers/resizing-compressing-photos-faster-page-loading/
+[2] http://www.monitis.com/blog/5-bottlenecks-that-slow-down-your-website-performance/
+[3] https://pagely.com/blog/diagnose-slow-pages/
+
+
+Q2: A customer sends you the following message: "We're considering both your RESTful API integration and iOS SDK integration for our new iOS app. Which one is the best choice 
+for our mobile app?"
+
+Note: API documentation can be found here & iOS documentation can be found here.
+
+A2: 
+Dear customer, 
+  While the RESTful API [1] provides full access to Olapic's functionality and content, 
+the iOS SDK [2] provides you with native code APIs that can be used within your iOS app's native code  with minimal effort (i.e. coding) required.
+If you only use the RESTful API, instead, you will need to implement all the interaction with that Web 
+interface from scratch.
+
+The iOS SDK [2] is always recommended for iOS native apps.
+
+Rationale/Sources 2:
+[1] http://apiv2-docs.photorank.me/#top
+[2] https://cocoapods.org/pods/Olapic-SDK-iOS
+
+
+Q3: The following complaint comes in from a customer: "Our widgets are down! You sent us an email saying our new API key is ready and now we're getting a message saying API key expired!"
+Note: Due to a bug on our side, the API key that was generated for them was expired at the time they received it. The new API key is now ready for them to access in their Olapic account.
+
+A3:
+
+Dear customer:
+  Due to an unexpected problem during the API key generation, your key was generated with a bad expiration date. A new API key is now ready for you to access in your Olapic account. 
+
+Please, replace your current API key with the one provided in your account. You always contact us, if you need any further assistance. 
+
+We sincerely apologize for this inconvenience. We are already working to prevent any of these issues, in the future. 
+
+Kind regards,
+XX
+
+Rationale/Sources 3:
+Don’t lie. Fix the problem as soon as possible. Prevent it from happening again  in the future.

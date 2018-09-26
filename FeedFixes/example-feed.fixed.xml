@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Feed>
+    <Categories>
+        <Category>
+            <CategoryUniqueID>cat1001</CategoryUniqueID>
+            <Name>Men's</Name>
+            <CategoryUrl>http://www.myawesomestore.com/categories/mens</CategoryUrl>
+        </Category>
+        <Category>
+            <CategoryUniqueID>cat1002</CategoryUniqueID>
+            <Name>T-shirts</Name>
+            <CategoryUrl>http://www.myawesomestore.com/categories/mens/tshirts</CategoryUrl>
+            <CategoryParentID>cat1001</CategoryParentID>
+        </Category>
+    </Categories>
+    <Products>
+        <Product>
+            <Name>Awesome Possum T-shirt</Name>
+            <ProductUniqueID>APTS</ProductUniqueID>
+            <ProductUrl>http://www.myawesomestore.com/products/APTS</ProductUrl>
+            <ImageUrl>http://www.myawesomestore.com/images/APTS-mainstockimage.jpg</ImageUrl>
+            <Description>This is an example description of my Awesome Possum T-shirt</Description>
+            <CategoryID>cat1002</CategoryID>
+            <UPCs>
+                <UPC>001-122-334451</UPC>
+                <UPC>001-122-334483</UPC>
+            </UPCs>
+            <Price>23.99</Price>
+            <Stock>15</Stock>
+            <Availability>true</Availability>
+        </Product>
+        <Product>
+            <Name>Awesome Possum T-shirt Black</Name>
+            <ProductUniqueID>APTS-01</ProductUniqueID>
+            <ProductUrl>http://www.myawesomestore.com/products/APTS?color=01</ProductUrl>
+            <ImageUrl>http://www.myawesomestore.com/images/APTS-black.jpg</ImageUrl>
+            <Description>This is an example description of my Awesome Possum T-shirt</Description>
+            <CategoryID>cat1002</CategoryID>
+            <UPCs>
+                <UPC>001122334451</UPC>
+                <UPC>001122334452</UPC>
+                <UPC>001122334453</UPC>
+            </UPCs>
+            <Price>23.99</Price>
+            <Stock>5</Stock>
+            <Availability>true</Availability>
+            <Color>Black</Color>
+            <ParentID>APTS</ParentID>
+        </Product>
+        <Product>
+            <Name>Awesome Possum T-shirt Blue</Name>
+            <ProductUniqueID>APTS-02-Blue</ProductUniqueID>
+            <ProductUrl>http://www.myawesomestore.com/products/APTS?color=02</ProductUrl>
+            <ImageUrl>http://www.myawesomestore.com/images/APTS-black.jpg</ImageUrl>
+            <Description>This is an example description of my Awesome Possum T-shirt</Description>
+            <CategoryID>cat1002</CategoryID>
+            <UPCs>
+                <UPC>001122334461</UPC>
+                <UPC>001122334463</UPC>
+            </UPCs>
+            <Price>23.99</Price>
+            <Stock>5</Stock>
+            <Availability>true</Availability>
+            <Color>Blue</Color>
+            <ParentID>APTS</ParentID>
+        </Product>
+        <Product>
+            <Name>Awesome Possum T-shirt &amp; Shorts Red</Name>
+            <ProductUniqueID>APTS-03</ProductUniqueID>
+            <ProductUrl>http://www.myawesomestore.com/products/APTS?color=03</ProductUrl>
+            <ImageUrl>http://www.myawesomestore.com/images/APTS-red.jpg</ImageUrl>
+            <Description>This is an example description of my Awesome Possum T-shirt and Shorts</Description>
+            <CategoryID>cat1234</CategoryID>
+            <UPCs>
+                <UPC>001122334471</UPC>
+                <UPC>001122334473</UPC>
+            </UPCs>
+            <Price>23.99</Price>
+            <Stock>5</Stock>
+            <Availability>true</Availability>
+            <Color>Red</Color>
+            <ParentID>APTS</ParentID>
+        </Product>
+    </Products>
+</Feed>

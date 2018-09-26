@@ -1,0 +1,55 @@
+Fixes to XML feed
+
+** Line 68 ** (xml syntax error)
+Notice that some special characters such as &, >, <, ', and " must 
+be replaced with &amp;, &gt;, &lt, &apos;, and &quot;, respectivelly. 
+
+So, the line 68 
+
+<Name>Awesome Possum T-shirt & Shorts Red</Name>
+
+shall be replaced by
+
+<Name>Awesome Possum T-shirt &amp; Shorts Red</Name>
+
+Reference: https://www.w3schools.com/xml/xml_syntax.asp (see "Entity References" Section)
+
+
+
+** Lines 52 ** (Olapic's scheme validation error)
+The ProductUniqueID field is required to be a string of 1 or more consececutive characters
+(i.e. no spaces)
+
+So, line 52
+
+'ProductUniqueID': 'APTS-02 Blue'
+
+shall be replaced by something like (suggestion)
+
+'ProductUniqueID': 'APTS-02-Blue'
+
+
+
+** Line 73 ** (Olapic's scheme validation error)
+CategoryID cannot be empty. This field has the same requirements as ProductUniqueID
+(see previous fix)
+
+So, line 73
+
+<CategoryID />
+
+shall be replaced by something like (suggestion)
+
+<CategoryID>cat1234</CategoryID>
+
+or 
+
+<CategoryID>some_other_category_id</CategoryID>
+
+Please, asign a proper CategoryID to the product with id equal to "APTS-03".
+
+
+
+********
+You can check a copy of the original feed file modified with the suggested 
+changes, above, in the file named "example-feed.fixed.xml".
