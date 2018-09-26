@@ -1,3 +1,4 @@
+/* Just add it as script element  to execute */
 'use strict';
 
 function insert_badge(badge_data, DOM_dest) {
