@@ -25,16 +25,14 @@ function insert_badge(badge_data, DOM_dest) {
     username_span.style.color = 'black';
     username_span.style.padding = '4%';
     date_span.innerHTML = badge_data.date_str.split('T')[0];
-    date_span.style['font-family'] = str_font_family;;  
+    date_span.style['font-family'] = str_font_family;
     date_span.style.color = 'darkgrey';
     date_span.style.padding = '5%';
     avatar_image.src = badge_data.avatar_url;
     avatar_image.style['max-width'] = '48px';
     badge_div.style['max-width'] = '90%';
-    //avatar_image.style.padding = '2%';
     avatar_image.style.width = '10%';
     badge_div.style.width = '70%';
-    //footer_div.style.display = 'flex';
     footer_div.style['align-items'] = 'center';
     footer_div.style['background-color'] = 'white';
     footer_div.style['padding-bottom'] = '5%';
@@ -44,7 +42,7 @@ function insert_badge(badge_data, DOM_dest) {
     header_div.style['padding-bottom'] = '1%';
     header_div.style['align-items'] = 'center';
     header_div.style['background-color'] = 'white';
-    badge_div.style.padding = '2%'; 
+    badge_div.style.padding = '2%';
     badge_div.style['background-color'] = '#fafafa';
 
 }
