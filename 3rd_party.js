@@ -9,7 +9,7 @@ function insert_badge(badge_data, DOM_dest) {
         avatar_image = document.createElement('img'),
         username_span = document.createElement('span'),
         date_span = document.createElement('span'),
-        style_str = 'font-size: larger; font-weight: bolder; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";';
+        str_font_family = '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
     feature_image.src = badge_data.image_url;
     header_div.appendChild(avatar_image);
     header_div.appendChild(username_span);
@@ -20,14 +20,33 @@ function insert_badge(badge_data, DOM_dest) {
     DOM_dest.innerHTML = '';
     DOM_dest.appendChild(badge_div);
     username_span.innerHTML = badge_data.username_str;
-    username_span.style = style_str +  'color: black;';
+    username_span.style['font-family'] = str_font_family;
+    username_span.style['font-weight'] = 'bolder';
+    username_span.style.color = 'black';
+    username_span.style.padding = '4%';
     date_span.innerHTML = badge_data.date_str.split('T')[0];
-    date_span.style = style_str +  'color: darkgrey;';
+    date_span.style['font-family'] = str_font_family;;  
+    date_span.style.color = 'darkgrey';
+    date_span.style.padding = '5%';
     avatar_image.src = badge_data.avatar_url;
-    avatar_image['max-width'] = '48px';
-    badge_div['max-width'] =  '90%';
-    footer_div.style = 'display:flex; align-items:center';
-    header_div.style = 'display:flex; align-items:center';
+    avatar_image.style['max-width'] = '48px';
+    badge_div.style['max-width'] = '90%';
+    //avatar_image.style.padding = '2%';
+    avatar_image.style.width = '10%';
+    badge_div.style.width = '70%';
+    //footer_div.style.display = 'flex';
+    footer_div.style['align-items'] = 'center';
+    footer_div.style['background-color'] = 'white';
+    footer_div.style['padding-bottom'] = '5%';
+    footer_div.style['padding-top'] = '5%';
+    header_div.style.display = 'flex';
+    header_div.style['padding-left'] = '3%';
+    header_div.style['padding-bottom'] = '1%';
+    header_div.style['align-items'] = 'center';
+    header_div.style['background-color'] = 'white';
+    badge_div.style.padding = '2%'; 
+    badge_div.style['background-color'] = '#fafafa';
+
 }
 
 function switch_images(source_json_url, DOM_dest) {
